@@ -1,0 +1,217 @@
+/*Variable*/
+
+$cocoa-brown: #301d10;
+$font1: normal 'Open Sans', sans-serif;
+$font2: italic 'Open Sans', serif;
+$font3: normal 'Amiri', serif;
+$font4: bold 'Amiri', serif;
+$text-align: center;
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+#mainNav {
+    width: 100%;
+    background-color: rgba(48, 29, 16, 0.7);
+    
+    position: fixed;
+    top: 0;
+	left: 0;
+	
+	.navbar-brand img {
+  	height: 3rem;
+	}
+
+	.navbar-toggler {
+  	padding: 0.75rem;
+  	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  	font-size: 0.75rem;
+  	color: #fff;
+  	text-transform: uppercase;
+  	border: 0;
+	}
+	.navbar-nav {
+		.nav-item {
+			.nav-link {
+  			font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  			font-size: 0.95rem;
+  			color: #fff;
+  			letter-spacing: 0.0625em;
+			}
+		}
+	}
+}
+
+.card {
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.TazaCafe {
+	display: flex;
+	justify-content: space-around;
+	background-color: #d5c8bc;
+	height: 23rem;
+	width: 100%;
+	box-sizing: border-box;
+
+	.PanCafe {
+		margin-top: 2rem;
+		margin-left: 5rem;
+		}
+		.TextoCafe {
+			color: #ffffff;
+			margin: 8rem;
+			font-family: $font2;
+			@if $font2 == TextoCafe {
+				text-align: justify;
+			}
+		}
+}
+
+#Nosotros { 
+	color:#6E6057;
+	font-family: $font1;
+}
+
+#Productos { 
+	color:#6E6057;
+	font-family: $font1;
+}
+
+#Contactos {
+	color:#6E6057;
+	font-family: $font1;
+}
+
+.card {
+	box-shadow: 10px 10px 5px 0px rgba(168,168,168,1)
+}
+
+.article { 
+	padding: 50px ;
+	color:#6E6057;
+	font-family: $font1;
+	text-align: $text-align;
+	@if $font1 == article {
+		font-size: 1rem;
+	}
+}
+
+.container {
+	color:#6E6057;
+}
+
+.Row {
+	/*display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;*/
+	color:#6E6057;
+}
+
+.Destacados {
+	text-align: $text-align;
+	color:#6E6057;
+	padding: 40px;
+
+}
+
+p {
+	color: #594A3F;
+	font-family: $font1;
+}
+
+.Titulo {
+	text-align: $text-align;
+	text-decoration: underline;
+	color:#6E6057;
+}
+
+.card-title {
+	font-family: $font1;
+	color: #6E6057;
+}
+
+.card-text {
+	color: #6E6057;
+	font-family: $font1;
+}
+
+form { 
+	color:#6E6057;
+}
+
+h1 {
+	font-family: $font3;
+}
+
+h3 {
+	font-family: $font4;
+	text-transform: uppercase;
+	text-align: $text-align;
+}
+
+table {
+	font-family: $font1;
+}
+
+fieldset {
+	font-family: $font1;
+	text-align: $text-align;
+}
+
+.Footer__Contactos {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		//height: 12rem;//
+		width: 100%;
+		background-color: #bdaea0;
+	.Footer__Datos {  
+		font-family: $font1;
+		text-align: $text-align;
+		color: $cocoa-brown;
+
+		.social-icons {
+			text-align: center;
+			}  
+		  .social-icons li {
+			display:inline-block;
+			list-style-type:none;
+			-webkit-user-select:none;
+			-moz-user-select:none;
+			}
+		  .social-icons li a {
+			border-bottom: none;
+			}
+		  .social-icons li img {
+			width: 50px;
+			height:50px;
+			margin-right: 20px;
+		  }
+	}
+}
+
+.Copyright {
+	background-color:#594A3F;
+	padding: 10px;
+	.Texto {
+	color: #ffffff;
+	font-family: $font1;
+	text-align: $text-align;
+
+	@if $font1 == copyright {
+		font-size: 12px;
+	}
+	}
+}
